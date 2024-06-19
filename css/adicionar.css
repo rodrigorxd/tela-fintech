@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Anders'; /*a name to be used later*/
+    src: url('../assets/AndersFF/Anders.ttf'); /*URL to font*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --main-bg: #1e1e1e;
+    --main-text: #fff;
+    --main-green: #4DF7B7;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--main-bg);
+    height: 100vh;
+}
+
+.logo, .logo__two{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Anders";
+}
+
+.logo__two{
+    color: var(--main-text);
+}
+
+.limit{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.profile__button{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: var(--main-green);
+    font-weight: bold;
+}
+
+.profile__button, .menu__button, .footer__button, .adicionar__button{
+    text-decoration: none;
+    color: var(--main-bg);
+}
+
+.navbar-nav{
+    margin-left: 2rem;
+    display: flex;
+}
+
+.nav-link{
+    font-size: 2rem;
+    color: var(--main-text);
+    font-weight: bold;
+}
+
+.nav-link:hover:not(.active), .nav-link:focus, .active:hover, .active, .logo{
+    color: var(--main-green);
+}
+
+.section__title{
+    color: var(--main-text);
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.horizontal__line{
+    height: 1px;
+    background-color: var(--main-green);
+}
+
+.row{
+    justify-content: center;
+}
+
+.navbar-toggler-icon{
+    color: #4DF7B7;
+    font-size: 2rem;
+}
+
+.limit__two{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.input__box{
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid var(--main-green);
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__title, .input__descricao{
+    font-size: 1.5rem;
+    color: var(--main-text);
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.input__select, .input__data{
+    background-color: transparent;
+    color: var(--main-green);
+    font-size: 1.5rem;
+    color-scheme: dark;
+}
+
+option{
+    background-color: var(--main-bg);
+}
+
+.input__valor{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    background-color: var(--main-bg);
+}
+
+.input__valor:focus, .input__descricao{
+    outline: 1px solid var(--main-green);
+}
+
+.input__descricao{
+    width: 100%;
+    background-color: var(--main-bg);
+    padding: 0.5rem;
+}
+
+.footer__box{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.footer__button{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-bg);
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: var(--main-green);
+    font-weight: bold;
+}
+
+.adicionar__button{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--main-green);
+}
